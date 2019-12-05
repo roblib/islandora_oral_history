@@ -1,0 +1,15 @@
+bundle: islandora
+excluded:
+  - language.content_settings.node.islandora_oral_history
+  - core.entity_form_display.node.islandora_oral_history.default
+  - core.entity_view_display.node.islandora_oral_history.default
+  - core.entity_view_display.node.islandora_oral_history.teaser
+  - field.field.node.islandora_oral_history.field_contributor
+  - field.field.node.islandora_oral_history.field_creator
+  - field.field.node.islandora_oral_history.field_member_of
+  - field.field.node.islandora_oral_history.field_model
+  - field.field.node.islandora_oral_history.field_oral_description
+  - field.field.node.islandora_oral_history.field_oral_genre
+  - field.field.node.islandora_oral_history.field_oral_instantiation
+  - field.field.node.islandora_oral_history.field_rdm_geograhical_location
+required: true

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: islandora_rdm_instantiation
+label: Instantiation
+icon_uuid: null
+description: 'Physical instantiation description'
+behavior_plugins: {  }
