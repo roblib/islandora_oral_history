@@ -5,6 +5,7 @@ dependencies:
     - field.field.media.islandora_rdm_interview.field_access_terms
     - field.field.media.islandora_rdm_interview.field_file_size
     - field.field.media.islandora_rdm_interview.field_interview_compressed_audio
+    - field.field.media.islandora_rdm_interview.field_interview_vtt_file
     - field.field.media.islandora_rdm_interview.field_media_audio_file
     - field.field.media.islandora_rdm_interview.field_media_of
     - field.field.media.islandora_rdm_interview.field_media_use
@@ -44,6 +45,13 @@ content:
     region: content
   field_interview_compressed_audio:
     weight: 108
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_interview_vtt_file:
+    weight: 109
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
