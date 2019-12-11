@@ -1,4 +1,5 @@
-langcode: en status: true
+langcode: en
+status: true
 dependencies:
   module:
     - field_permissions
