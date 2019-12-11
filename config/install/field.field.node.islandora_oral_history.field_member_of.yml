@@ -1,0 +1,28 @@
+uuid: 4eced91c-e31a-4a9c-b3e6-7d9316cf5787
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_member_of
+    - node.type.islandora_oral_history
+    - node.type.islandora_rdm_dataset
+id: node.islandora_oral_history.field_member_of
+field_name: field_member_of
+entity_type: node
+bundle: islandora_oral_history
+label: 'Member of'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      islandora_rdm_dataset: islandora_rdm_dataset
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

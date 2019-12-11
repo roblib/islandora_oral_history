@@ -1,0 +1,19 @@
+uuid: a31d1c77-1755-4b17-8aac-e87d2c0b5372
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_generations
+    - paragraphs.paragraphs_type.islandora_rdm_instantiation
+id: paragraph.islandora_rdm_instantiation.field_generations
+field_name: field_generations
+entity_type: paragraph
+bundle: islandora_rdm_instantiation
+label: Generations
+description: 'E.g., ''Original recording''.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

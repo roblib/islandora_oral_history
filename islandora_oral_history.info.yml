@@ -12,8 +12,7 @@ dependencies:
   - file
   - geolocation
   - islandora_core_feature
-  - islandora_defaults
-  - islandora_rdm_media_with_transcript
+  - islandora_defaults 
   - islandora_rdm_types
   - language
   - media

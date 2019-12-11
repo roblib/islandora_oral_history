@@ -1,0 +1,21 @@
+uuid: 5b9f5205-47aa-404a-9609-da1aa75723ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rdm_geograhical_location
+    - node.type.islandora_oral_history
+  module:
+    - geolocation
+id: node.islandora_oral_history.field_rdm_geograhical_location
+field_name: field_rdm_geograhical_location
+entity_type: node
+bundle: islandora_oral_history
+label: 'Geograhical Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

@@ -1,0 +1,64 @@
+uuid: be647f14-fd8a-4d82-bf9a-81f3463dad02
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contributor
+    - node.type.islandora_oral_history
+    - paragraphs.paragraphs_type.rdm_contribution_personal
+  module:
+    - entity_reference_revisions
+id: node.islandora_oral_history.field_contributor
+field_name: field_contributor
+entity_type: node
+bundle: islandora_oral_history
+label: Contributor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      rdm_contribution_personal: rdm_contribution_personal
+    target_bundles_drag_drop:
+      alternate_identifier:
+        weight: 13
+        enabled: false
+      islandora_rdm_instantiation:
+        weight: 14
+        enabled: false
+      license_attribution:
+        weight: 15
+        enabled: false
+      rdm_contribution_organizational:
+        weight: 16
+        enabled: false
+      rdm_contribution_personal:
+        enabled: true
+        weight: 17
+      rdm_organization:
+        weight: 18
+        enabled: false
+      rdm_organizational_identifier:
+        weight: 19
+        enabled: false
+      rdm_person:
+        weight: 20
+        enabled: false
+      rdm_personal_identifier:
+        weight: 21
+        enabled: false
+      related_resource:
+        weight: 22
+        enabled: false
+      typed_date:
+        weight: 23
+        enabled: false
+      typed_description:
+        weight: 24
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,167 @@
+uuid: b3088de1-fc5d-4213-8c9a-3627f8a92bd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.islandora_oral_history.field_contributor
+    - field.field.node.islandora_oral_history.field_creator
+    - field.field.node.islandora_oral_history.field_member_of
+    - field.field.node.islandora_oral_history.field_model
+    - field.field.node.islandora_oral_history.field_oral_description
+    - field.field.node.islandora_oral_history.field_oral_genre
+    - field.field.node.islandora_oral_history.field_oral_instantiation
+    - field.field.node.islandora_oral_history.field_rdm_geograhical_location
+    - node.type.islandora_oral_history
+  module:
+    - entity_reference_revisions
+    - field_group
+    - geolocation
+    - user
+third_party_settings:
+  field_group:
+    group_oral_history_tabs:
+      children:
+        - group_files
+        - group_metadata
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Oral History Tabs'
+    group_files:
+      children:
+        - player_media_evas_entity_view_1
+      parent_name: group_oral_history_tabs
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+      label: Files
+    group_metadata:
+      children:
+        - field_creator
+        - field_contributor
+        - field_oral_description
+        - field_gemini_uri
+        - field_rdm_geograhical_location
+        - field_oral_genre
+        - field_member_of
+        - field_oral_instantiation
+        - field_model
+      parent_name: group_oral_history_tabs
+      weight: 22
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+      label: Metadata
+id: node.islandora_oral_history.default
+targetEntityType: node
+bundle: islandora_oral_history
+mode: default
+content:
+  field_contributor:
+    type: entity_reference_revisions_entity_view
+    weight: 6
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_creator:
+    type: entity_reference_revisions_entity_view
+    weight: 5
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_gemini_uri:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_member_of:
+    weight: 11
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_model:
+    weight: 13
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oral_description:
+    type: entity_reference_revisions_entity_view
+    weight: 7
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_oral_genre:
+    weight: 10
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_oral_instantiation:
+    type: entity_reference_revisions_entity_view
+    weight: 12
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_rdm_geograhical_location:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: geolocation_latlng
+    region: content
+  player_media_evas_entity_view_1:
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  display_media_entity_view_1: true
+  display_media_entity_view_2: true
+  display_media_service_file: true
+  display_media_thumbnail: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  islandora_fits_checksum: true
+  langcode: true
+  links: true
+  openseadragon_media_evas_entity_view_1: true
+  openseadragon_media_evas_entity_view_2: true
+  openseadragon_media_evas_service_file: true
+  pdfjs_media_evas_entity_view_1: true
+  pdfjs_media_evas_entity_view_2: true
+  pdfjs_media_evas_service_file: true

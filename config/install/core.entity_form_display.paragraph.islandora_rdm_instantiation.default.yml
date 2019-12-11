@@ -1,0 +1,59 @@
+uuid: 12a023f7-ba4c-4dbe-8ba1-e837fdf34519
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.islandora_rdm_instantiation.field_channel_configuration
+    - field.field.paragraph.islandora_rdm_instantiation.field_duration
+    - field.field.paragraph.islandora_rdm_instantiation.field_generations
+    - field.field.paragraph.islandora_rdm_instantiation.field_media_type
+    - field.field.paragraph.islandora_rdm_instantiation.field_physical_description
+    - paragraphs.paragraphs_type.islandora_rdm_instantiation
+id: paragraph.islandora_rdm_instantiation.default
+targetEntityType: paragraph
+bundle: islandora_rdm_instantiation
+mode: default
+content:
+  field_channel_configuration:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_duration:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_generations:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_media_type:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_physical_description:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

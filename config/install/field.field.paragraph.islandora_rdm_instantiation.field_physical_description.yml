@@ -1,0 +1,19 @@
+uuid: 95576899-3ce8-4a31-8c28-51928acb2b72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_physical_description
+    - paragraphs.paragraphs_type.islandora_rdm_instantiation
+id: paragraph.islandora_rdm_instantiation.field_physical_description
+field_name: field_physical_description
+entity_type: paragraph
+bundle: islandora_rdm_instantiation
+label: 'Physical Description'
+description: 'Description of the physical media.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,64 @@
+uuid: 05803ef7-65f8-4f65-9fe7-716c23f5873f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oral_description
+    - node.type.islandora_oral_history
+    - paragraphs.paragraphs_type.typed_description
+  module:
+    - entity_reference_revisions
+id: node.islandora_oral_history.field_oral_description
+field_name: field_oral_description
+entity_type: node
+bundle: islandora_oral_history
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      typed_description: typed_description
+    target_bundles_drag_drop:
+      alternate_identifier:
+        weight: 13
+        enabled: false
+      islandora_rdm_instantiation:
+        weight: 14
+        enabled: false
+      license_attribution:
+        weight: 15
+        enabled: false
+      rdm_contribution_organizational:
+        weight: 16
+        enabled: false
+      rdm_contribution_personal:
+        weight: 17
+        enabled: false
+      rdm_organization:
+        weight: 18
+        enabled: false
+      rdm_organizational_identifier:
+        weight: 19
+        enabled: false
+      rdm_person:
+        weight: 20
+        enabled: false
+      rdm_personal_identifier:
+        weight: 21
+        enabled: false
+      related_resource:
+        weight: 22
+        enabled: false
+      typed_date:
+        weight: 23
+        enabled: false
+      typed_description:
+        enabled: true
+        weight: 24
+field_type: entity_reference_revisions

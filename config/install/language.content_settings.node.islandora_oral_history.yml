@@ -1,0 +1,16 @@
+uuid: bea0b32a-1d15-48f3-b59e-f13fe9fd46dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.islandora_oral_history
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.islandora_oral_history
+target_entity_type_id: node
+target_bundle: islandora_oral_history
+default_langcode: site_default
+language_alterable: true

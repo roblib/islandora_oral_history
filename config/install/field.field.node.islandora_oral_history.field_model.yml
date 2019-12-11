@@ -1,0 +1,29 @@
+uuid: 2d882f7b-67f2-4039-9be9-bc4459de47ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_model
+    - node.type.islandora_oral_history
+    - taxonomy.vocabulary.islandora_models
+id: node.islandora_oral_history.field_model
+field_name: field_model
+entity_type: node
+bundle: islandora_oral_history
+label: Model
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      islandora_models: islandora_models
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

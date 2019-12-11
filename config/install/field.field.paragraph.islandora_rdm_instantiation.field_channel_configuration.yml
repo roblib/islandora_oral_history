@@ -1,0 +1,19 @@
+uuid: 079c9bb0-52fe-4ae3-ac7e-62e9e6a6ef44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_channel_configuration
+    - paragraphs.paragraphs_type.islandora_rdm_instantiation
+id: paragraph.islandora_rdm_instantiation.field_channel_configuration
+field_name: field_channel_configuration
+entity_type: paragraph
+bundle: islandora_rdm_instantiation
+label: 'Channel Configuration'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
