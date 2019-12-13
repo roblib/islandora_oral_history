@@ -1,0 +1,32 @@
+{
+  "name": "islandora-rdm/islandora_oral_history",
+  "description": "Islandora Oral History Module",
+  "type": "drupal-module",
+  "keywords": ["Drupal", "Islandora"],
+  "homepage": "https://github.com/roblib/islandora_oral_history", 
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  ],
+  "require": { 
+    "drupal/entity_reference_revisions": "*", 
+    "drupal/field_group": "*",
+    "field_permissions": "*", 
+    "drupal/geolocation": "*",
+    "islandora/islandora_core_feature": "*",
+    "islandora/islandora_defaults": "*",
+    "islandora-rdm/islandora_rdm_types": "*", 
+    "drupal/paragraphs": "*", 
+    "drupal/videojs": "*" 
+  },
+  "license": "GPL-2.0+",
+  "authors": [ 
+    {
+      "name": "Alexander O'Neill",
+      "email": "aloneill@gmail.com",
+      "role": "Contributor"
+    } 
+  ]
+}

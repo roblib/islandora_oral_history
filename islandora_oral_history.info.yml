@@ -21,5 +21,6 @@ dependencies:
   - paragraphs
   - path
   - user
+  - videojs
 package: Islandora
 core_incompatible: false
